@@ -91,18 +91,14 @@ def on_click_age_male(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEKhmtlKrd-qWklFgqQ3-6dE4QWRt7htgACARMAArBlaVJx7MNtm_KkaDAE')
         my_bot.send_message(message.chat.id, 'За шмотки шаришь?\nЕс что, напечатать надо')
-        my_bot.register_next_step_handler(message, fashion_demon)
+        my_bot.register_next_step_handler(message, age1_fashion_demon)
     elif message.text == '18-25':
         my_bot.send_message(message.chat.id, 'гм, солидно')
         my_bot.send_sticker(message.chat.id,
-                            'CAACAgQAAxkBAAEKhm9lKrqSWXwHYR1OEYdQ_hfRGkuC5wACUhIAAkRKWFPs0-R3aMtrNjAE')
-        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('Хочу классику'))
-        style_buttons = ['Что-нибудь на каждый день', 'Хочется быть самым самым на тусе']
-        markup.add(*style_buttons)
-        markup.add(types.KeyboardButton('Назад'))
-        my_bot.send_message(message.chat.id, 'Ну и для чего ты тут?', reply_markup=markup)
-        # my_bot.register_next_step_handler(message, on_click_purpose_male_2age)
+                            'CAACAgQAAxkBAAEL9jtmJN4jk7dFBzlfy0Jw23282szG3AACsA8AAo5wcVL0lHRnyeREbTQE')
+        my_bot.send_message(message.chat.id, 'За вещички шаришь?\nМодные показы там, стилизация и тп\nЕсли что,'
+                                             ' напечатать надо')
+        my_bot.register_next_step_handler(message, age1_fashion_demon)
     elif message.text == '25+':
         my_bot.send_message(message.chat.id, 'ухх, ну ты и старичок')
         my_bot.send_sticker(message.chat.id,
@@ -200,7 +196,7 @@ def on_click_age_female(message):
         my_bot.register_next_step_handler(message, on_click_age_female)
 
 
-def fashion_demon(message):
+def age1_fashion_demon(message):
     true = ['да', 'конечно', 'ага', 'угу', 'кнш', 'типо да', 'ну тип', 'есс', 'ес', 'обижаешь', 'yes', 'da',
             'aga', 'ye', 'yep']
     false = ['нет', 'неа', 'никак нет', 'тип нет', 'ну нет', 'не', 'ноу', 'ноуп', 'no', 'net', 'ne', 'nop']
@@ -247,7 +243,7 @@ def fashion_demon(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEKhm1lKrleMk5iAm6MBM6DlRFuq6UrcgACsBkAAkTzcFJV5Dheo2nFUDAE')
         my_bot.send_message(message.chat.id, 'Те надо просто написать да/нет, дуралей')
-        my_bot.register_next_step_handler(message, fashion_demon)
+        my_bot.register_next_step_handler(message, age1_fashion_demon)
 
 
 def on_click_purpose_male_1age_fashion(message):
@@ -322,7 +318,7 @@ def on_click_purpose_male_1age_fashion(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEKhmtlKrd-qWklFgqQ3-6dE4QWRt7htgACARMAArBlaVJx7MNtm_KkaDAE')
         my_bot.send_message(message.chat.id, 'Так шаришь или нет, определись?\nЕс что, напечатать надо, напоминаю')
-        my_bot.register_next_step_handler(message, fashion_demon)
+        my_bot.register_next_step_handler(message, age1_fashion_demon)
 
 
 def on_click_purpose_male_1age_none_fashion(message):
@@ -364,7 +360,7 @@ def on_click_purpose_male_1age_none_fashion(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEKhmtlKrd-qWklFgqQ3-6dE4QWRt7htgACARMAArBlaVJx7MNtm_KkaDAE')
         my_bot.send_message(message.chat.id, 'Так шаришь или нет, определись?\nЕс что, напечатать надо, напоминаю')
-        my_bot.register_next_step_handler(message, fashion_demon)
+        my_bot.register_next_step_handler(message, age1_fashion_demon)
 
 
 def on_click_purpose_male_1age_fashion_y2k_like1(message):
