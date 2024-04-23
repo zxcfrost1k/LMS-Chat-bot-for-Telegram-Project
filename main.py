@@ -97,7 +97,7 @@ def on_click_age_male(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEL9jtmJN4jk7dFBzlfy0Jw23282szG3AACsA8AAo5wcVL0lHRnyeREbTQE')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -367,7 +367,7 @@ def on_click_purpose_male_1age_none_fashion(message):
 
 
 def on_click_purpose_male_2age(message):
-    if message.text == 'С девушкой в театр, в ресторан выйти':
+    if message.text == 'Чтоб выйти не стыдно было':
         my_bot.send_message(message.chat.id, 'Как те?')
         image = open('Files/soon.png', 'rb')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -951,7 +951,7 @@ def on_click_purpose_male_age2_1_like1(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEKh_1lLB_c5OzTJwS7oRPaHI_JtGyYbQACxA4AAkJaCFMhI834J3CWbjAE')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -970,7 +970,7 @@ def on_click_purpose_male_age2_1_like1(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_age2_1_like2)
     elif message.text.lower() == 'назад':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -990,7 +990,7 @@ def on_click_purpose_male_age2_2_like1(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEKh_1lLB_c5OzTJwS7oRPaHI_JtGyYbQACxA4AAkJaCFMhI834J3CWbjAE')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -1009,7 +1009,7 @@ def on_click_purpose_male_age2_2_like1(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_age2_2_like2)
     elif message.text.lower() == 'назад':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -1029,7 +1029,7 @@ def on_click_purpose_male_age2_3_like1(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEKh_1lLB_c5OzTJwS7oRPaHI_JtGyYbQACxA4AAkJaCFMhI834J3CWbjAE')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -1048,7 +1048,7 @@ def on_click_purpose_male_age2_3_like1(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_age2_3_like2)
     elif message.text.lower() == 'назад':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -1769,7 +1769,7 @@ def on_click_purpose_male_age2_1_like2(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEKh_1lLB_c5OzTJwS7oRPaHI_JtGyYbQACxA4AAkJaCFMhI834J3CWbjAE')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -1788,7 +1788,7 @@ def on_click_purpose_male_age2_1_like2(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_age2_1_like3)
     elif message.text.lower() == 'назад':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -1808,7 +1808,7 @@ def on_click_purpose_male_age2_2_like2(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEKh_1lLB_c5OzTJwS7oRPaHI_JtGyYbQACxA4AAkJaCFMhI834J3CWbjAE')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -1827,7 +1827,7 @@ def on_click_purpose_male_age2_2_like2(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_age2_2_like3)
     elif message.text.lower() == 'назад':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -1847,7 +1847,7 @@ def on_click_purpose_male_age2_3_like2(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEKh_1lLB_c5OzTJwS7oRPaHI_JtGyYbQACxA4AAkJaCFMhI834J3CWbjAE')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -1866,7 +1866,7 @@ def on_click_purpose_male_age2_3_like2(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_age2_3_like3)
     elif message.text.lower() == 'назад':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -2590,7 +2590,7 @@ def on_click_purpose_male_age2_1_like3(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEKh_1lLB_c5OzTJwS7oRPaHI_JtGyYbQACxA4AAkJaCFMhI834J3CWbjAE')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -2601,7 +2601,7 @@ def on_click_purpose_male_age2_1_like3(message):
                             'CAACAgQAAxkBAAEKiAdlLClVXU6S1O9xlkJzkZH2ujIrxwACgQwAAqSVWVNWgoz58fdq8TAE')
         my_bot.send_message(message.chat.id, 'Ну и катись отсюда?')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -2609,7 +2609,7 @@ def on_click_purpose_male_age2_1_like3(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_2age)
     elif message.text.lower() == 'назад':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -2629,7 +2629,7 @@ def on_click_purpose_male_age2_2_like3(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEKh_1lLB_c5OzTJwS7oRPaHI_JtGyYbQACxA4AAkJaCFMhI834J3CWbjAE')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -2640,7 +2640,7 @@ def on_click_purpose_male_age2_2_like3(message):
                             'CAACAgQAAxkBAAEKiAdlLClVXU6S1O9xlkJzkZH2ujIrxwACgQwAAqSVWVNWgoz58fdq8TAE')
         my_bot.send_message(message.chat.id, 'Ну и катись отсюда?')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -2648,7 +2648,7 @@ def on_click_purpose_male_age2_2_like3(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_2age)
     elif message.text.lower() == 'назад':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -2668,7 +2668,7 @@ def on_click_purpose_male_age2_3_like3(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEKh_1lLB_c5OzTJwS7oRPaHI_JtGyYbQACxA4AAkJaCFMhI834J3CWbjAE')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -2679,7 +2679,7 @@ def on_click_purpose_male_age2_3_like3(message):
                             'CAACAgQAAxkBAAEKiAdlLClVXU6S1O9xlkJzkZH2ujIrxwACgQwAAqSVWVNWgoz58fdq8TAE')
         my_bot.send_message(message.chat.id, 'Ну и катись отсюда?')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
@@ -2687,7 +2687,7 @@ def on_click_purpose_male_age2_3_like3(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_2age)
     elif message.text.lower() == 'назад':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('С девушкой в театр, в ресторан выйти'))
+        markup.add(types.KeyboardButton('Чтоб выйти не стыдно было'))
         markup.add(types.KeyboardButton('На работу что-нибудь'))
         markup.add(types.KeyboardButton('На тусу'))
         markup.add(types.KeyboardButton('Назад'))
