@@ -108,7 +108,7 @@ def on_click_age_male(message):
         my_bot.send_sticker(message.chat.id,
                             'CAACAgQAAxkBAAEKhnVlKr4bhe8vkILsCoKTxmecm05JJAAC3w8AAhJmWFNEOjmAE2qcPTAE')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton('Что-нибудь солидное'))
+        markup.add(types.KeyboardButton('Нужно что-нибудь солидное'))
         markup.add(types.KeyboardButton('Хочется выглядить помоложе на работе'))
         markup.add(types.KeyboardButton('Хочу быть стильным'))
         markup.add(types.KeyboardButton('Назад'))
@@ -414,7 +414,7 @@ def on_click_purpose_male_2age(message):
 def on_click_purpose_male_3age(message):
     if message.text == 'Нужно что-нибудь солидное':
         my_bot.send_message(message.chat.id, 'Как вам?')
-        image = open('Files/man_age3_1_like1.png', 'rb')
+        image = open('Files/man_3age_1_like1.png', 'rb')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         like_buttons = ['👍', '👎']
         markup.add(*like_buttons)
@@ -1188,7 +1188,7 @@ def on_click_purpose_male_age3_3_like1(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_3age)
     elif message.text == '👎':
         my_bot.send_message(message.chat.id, 'Как насчёт этого?')
-        image = open('Files/man_age3_1_like2.png', 'rb')
+        image = open('Files/man_3age_3_like2.png', 'rb')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         like_buttons = ['👍', '👎']
         markup.add(*like_buttons)
@@ -1884,14 +1884,13 @@ def on_click_purpose_male_age2_3_like2(message):
         my_bot.send_message(message.chat.id, 'Я погляжу, те зашло\nТогда лови:')
         my_bot.send_message(message.chat.id,
                             '<b>Олимпийка</b> — <code>Peak</code>'
-                            '\n<bФутболка</b> — <code>Blend</code>'
+                            '\n<b>Футболка</b> — <code>Blend</code>'
                             '\n<b>Ботинки</b> — <code>Dr. Martens Rikard 3i Black Polished</code>'
                             '\n<b>Сумка поясная</b> — <code>Obey</code>'
                             '\n<b>Брюки</b> — <code>Carhartt WIP</code>'
                             '\n<b>Куртка утепленная</b> — <code>Obey</code>'
                             '\n<b>Чокер</b> — <code>Omut SPARK</code>'
-                            '\n<b>Очки солнцезащитные</b> — <code>Gucci GG1457S</code>'
-                            '\n<b>*</b> — <code>*</code>',
+                            '\n<b>Очки солнцезащитные</b> — <code>Gucci GG1457S</code>',
                             parse_mode='html')
         my_bot.send_message(message.chat.id, 'Рад был помочь 🌸')
         my_bot.send_sticker(message.chat.id,
