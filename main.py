@@ -425,7 +425,7 @@ def on_click_purpose_male_3age(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_age3_1_like1)
     if message.text == 'Хочется выглядить помоложе на работе':
         my_bot.send_message(message.chat.id, 'Как вам?')
-        image = open('Files/soon.png', 'rb')
+        image = open('Files/man_3age_2_like1.png', 'rb')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         like_buttons = ['👍', '👎']
         markup.add(*like_buttons)
@@ -929,7 +929,7 @@ def on_click_purpose_male_1age_none_fashion_3_like1(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_1age_none_fashion)
     elif message.text == '👎':
         my_bot.send_message(message.chat.id, 'Как насчёт этого?')
-        image = open('Files/soon.png', 'rb')
+        image = open('Files/man_1age_none_fashion_3_like2.png', 'rb')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         like_buttons = ['👍', '👎']
         markup.add(*like_buttons)
@@ -974,7 +974,7 @@ def on_click_purpose_male_age2_1_like1(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_2age)
     elif message.text == '👎':
         my_bot.send_message(message.chat.id, 'Как насчёт этого?')
-        image = open('Files/soon.png', 'rb')
+        image = open('Files/man_2age_1_like2.png', 'rb')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         like_buttons = ['👍', '👎']
         markup.add(*like_buttons)
@@ -1129,9 +1129,14 @@ def on_click_purpose_male_age3_2_like1(message):
     if message.text == '👍':
         my_bot.send_message(message.chat.id, 'Я погляжу, вам понравилось\nТогда держите:')
         my_bot.send_message(message.chat.id,
-                            '<b>*</b> — <code>*</code>'
-                            '\n<b>*</b> — <code>*</code>'
-                            '\n<b>*</b> — <code>*</code>',
+                            '<b>Толстовка</b> — <code>Mango Man BADY</code>'
+                            '\n<b>Сумка</b> — <code>Fila</code>'
+                            '\n<b>Носки</b> — <code>Fred Perry CLASSIC LAUREL WREATH</code>'
+                            '\n<b>Футболка</b> — <code>Trendyol</code>'
+                            '\n<b>Ботинки</b> — <code>Dr. Martens Rikard 3i Black Polished Smooth</code>'
+                            '\n<b>Оправа</b> — <code>Havvs T22509</code>'
+                            '\n<b>Куртка</b> — <code>Mango Man WILLIAM</code>'
+                            '\n<b>Джинсы Kargo</b> — <code>Mossmore</code>',
                             parse_mode='html')
         my_bot.send_message(message.chat.id, 'Рад был помочь 🌸')
         my_bot.send_sticker(message.chat.id,
@@ -1145,7 +1150,7 @@ def on_click_purpose_male_age3_2_like1(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_3age)
     elif message.text == '👎':
         my_bot.send_message(message.chat.id, 'Как насчёт этого?')
-        image = open('Files/soon.png', 'rb')
+        image = open('Files/man_3age_2_like2.png', 'rb')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         like_buttons = ['👍', '👎']
         markup.add(*like_buttons)
@@ -1696,7 +1701,7 @@ def on_click_purpose_male_1age_none_fashion_1_like2(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_1age_none_fashion)
     elif message.text == '👎':
         my_bot.send_message(message.chat.id, 'Ну на ещё')
-        image = open('Files/soon.png', 'rb')
+        image = open('Files/man_1age_none_fashion_1_like3.png', 'rb')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         like_buttons = ['👍', '👎']
         markup.add(*like_buttons)
@@ -1760,9 +1765,14 @@ def on_click_purpose_male_1age_none_fashion_3_like2(message):
     if message.text == '👍':
         my_bot.send_message(message.chat.id, 'Я погляжу, тебе зашло\nТогда лови:')
         my_bot.send_message(message.chat.id,
-                            '<b>*</b> — <code>*</code>'
-                            '\n<b>*</b> — <code>*</code>'
-                            '\n<b>*</b> — <code>*</code>',
+                            '<b>Худи</b> — <code>Lime</code>'
+                            '\n<b>Куртка утепленная</b> — <code>Diesel</code>'
+                            '\n<b>Ботинки</b> — <code>Camper</code>'
+                            '\n<b>Очки солнцезащитные</b> — <code>Invu</code>'
+                            '\n<b>Галстук</b> — <code>Mango Man BASIC7</code>'
+                            '\n<b>Брюки</b> — <code>Lime</code>'
+                            '\n<b>Рубашка</b> — <code>Mango Man OXFORD</code>'
+                            '\n<b>Рюкзак</b> — <code>Luxman</code>',
                             parse_mode='html')
         my_bot.send_message(message.chat.id, 'Рад был помочь 🌸')
         my_bot.send_sticker(message.chat.id,
@@ -1800,9 +1810,14 @@ def on_click_purpose_male_age2_1_like2(message):
     if message.text == '👍':
         my_bot.send_message(message.chat.id, 'Я погляжу, те зашло\nТогда лови:')
         my_bot.send_message(message.chat.id,
-                            '<b>*</b> — <code>*</code>'
-                            '\n<b>*</b> — <code>*</code>'
-                            '\n<b>*</b> — <code>*</code>',
+                            '<b>Толстовка</b> — <code>Gloria Jeans</code>'
+                            '\n<b>Лонгслив</b> — <code>Intimissimi</code>'
+                            '\n<b>Кеды</b> — <code>Boss Brandon_Tenn_sd</code>'
+                            '\n<b>Рюкзак</b> — <code>C.P. Company</code>'
+                            '\n<b>Джинсы</b> — <code>Zrn Man</code>'
+                            '\n<b>Пальто</b> — <code>All we need</code>'
+                            '\n<b>Шапка</b> — <code>Marhatter</code>'
+                            '\n<b>Подвеска</b> — <code>Lilaccat</code>',
                             parse_mode='html')
         my_bot.send_message(message.chat.id, 'Рад был помочь 🌸')
         my_bot.send_sticker(message.chat.id,
@@ -1816,7 +1831,7 @@ def on_click_purpose_male_age2_1_like2(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_2age)
     elif message.text == '👎':
         my_bot.send_message(message.chat.id, 'Может это?')
-        image = open('Files/soon.png', 'rb')
+        image = open('Files/man_2age_1_like3.png', 'rb')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         like_buttons = ['👍', '👎']
         markup.add(*like_buttons)
@@ -1904,7 +1919,7 @@ def on_click_purpose_male_age2_3_like2(message):
         my_bot.register_next_step_handler(message, on_click_purpose_male_2age)
     elif message.text == '👎':
         my_bot.send_message(message.chat.id, 'Может это?')
-        image = open('Files/soon.png', 'rb')
+        image = open('Files/man_2age_3_like3.png', 'rb')
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         like_buttons = ['👍', '👎']
         markup.add(*like_buttons)
@@ -1967,9 +1982,14 @@ def on_click_purpose_male_age3_2_like2(message):
     if message.text == '👍':
         my_bot.send_message(message.chat.id, 'Я погляжу, вам понравилось\nТогда держите:')
         my_bot.send_message(message.chat.id,
-                            '<b>*</b> — <code>*</code>'
-                            '\n<b>*</b> — <code>*</code>'
-                            '\n<b>*</b> — <code>*</code>',
+                            '<b>Лонгслив</b> — <code>Carhartt WIP Soundface</code>'
+                            '\n<b>Ботинки</b> — <code>Dr. Martens Vegan 1460 Cherry Red Oxford Rub Off</code>'
+                            '\n<b>Шапка</b> — <code>Tnf Logo Box Cuffed</code>'
+                            '\n<b>Сумка</b> — <code>Duffy</code>'
+                            '\n<b>Брюки</b> — <code>Carhartt WIP Aviation</code>'
+                            '\n<b>Кулон</b> — <code>Omut ODDS</code>'
+                            '\n<b>Куртка джинсовая</b> — <code>Carhartt WIP Active</code>'
+                            '\n<b>Очки солнцезащитные</b> — <code>Ray-Ban RB3447</code>',
                             parse_mode='html')
         my_bot.send_message(message.chat.id, 'Рад был помочь 🌸')
         my_bot.send_sticker(message.chat.id,
@@ -2516,8 +2536,14 @@ def on_click_purpose_male_1age_none_fashion_1_like3(message):
     if message.text == '👍':
         my_bot.send_message(message.chat.id, 'Я погляжу, тебе зашло\nТогда лови:')
         my_bot.send_message(message.chat.id,
-                            '<b>*</b> — <code>*</code>'
-                            '\n<b>*</b> — <code>*</code>'
+                            '<b>Пиджак</b> — <code>Lime</code>'
+                            '\n<b>Рубашка джинсовая</b> — <code>Marc O`Polo</code>'
+                            '\n<b>Ботинки</b> — <code>Camper</code>'
+                            '\n<b>Оправа</b> — <code>Gucci GG1446O 001</code>'
+                            '\n<b>Джинсы</b> — <code>Dickies THOMASVILLE</code>'
+                            '\n<b>Пальто</b> — <code>Richmond X</code>'
+                            '\n<b>Сумка</b> — <code>Sisley</code>'
+                            '\n<b>Часы</b> — <code>Diesel DZ4655</code>'
                             '\n<b>*</b> — <code>*</code>',
                             parse_mode='html')
         my_bot.send_message(message.chat.id, 'Рад был помочь 🌸')
@@ -2636,9 +2662,14 @@ def on_click_purpose_male_age2_1_like3(message):
     if message.text == '👍':
         my_bot.send_message(message.chat.id, 'Я погляжу, те зашло\nТогда лови:')
         my_bot.send_message(message.chat.id,
-                            '<b>*</b> — <code>*</code>'
-                            '\n<b>*</b> — <code>*</code>'
-                            '\n<b>*</b> — <code>*</code>',
+                            '<b>Брюки спортивные</b> — <code>Antgnst Cosmic</code>'
+                            '\n<b>Рубашка</b> — <code>Gloria Jeans</code>'
+                            '\n<b>Кеды</b> — <code>PUMA Suede Classic XXI</code>'
+                            '\n<b>Куртка джинсовая</b> — <code>Carhartt WIP OG Detroit</code>'
+                            '\n<b>Кардиган WILLYC</b> — <code>Mango Man</code>'
+                            '\n<b>Рюкзак</b> — <code>PUMA Patch Backpack</code>'
+                            '\n<b>Галстук</b> — <code>Henderson</code>'
+                            '\n<b>Бейсболка</b> — <code>Vans</code>',
                             parse_mode='html')
         my_bot.send_message(message.chat.id, 'Рад был помочь 🌸')
         my_bot.send_sticker(message.chat.id,
@@ -2719,9 +2750,12 @@ def on_click_purpose_male_age2_3_like3(message):
     if message.text == '👍':
         my_bot.send_message(message.chat.id, 'Я погляжу, те зашло\nТогда лови:')
         my_bot.send_message(message.chat.id,
-                            '<b>*</b> — <code>*</code>'
-                            '\n<b>*</b> — <code>*</code>'
-                            '\n<b>*</b> — <code>*</code>',
+                            '<b>Джемпер</b> — <code>The Ragged Priest</code>'
+                            '\n<b>Плащ</b> — <code>Red September</code>'
+                            '\n<b>Чокер</b> — <code>Omut SPARK</code>'
+                            '\n<b>Несессер</b> — <code>Harmont&Blaine</code>'
+                            '\n<b>Джинсы</b> — <code>Befree</code>'
+                            '\n<b>Очки солнцезащитные</b> — <code>Kaizi</code>',
                             parse_mode='html')
         my_bot.send_message(message.chat.id, 'Рад был помочь 🌸')
         my_bot.send_sticker(message.chat.id,
