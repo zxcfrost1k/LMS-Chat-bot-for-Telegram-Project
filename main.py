@@ -5,6 +5,7 @@ from telebot import types
 my_bot = telebot.TeleBot('6384079003:AAGFeXHw4EzPt6AeAftFdLFDCfzx48fBucI')
 
 
+# Прописываю команды запуска/перезауска чат-бота
 @my_bot.message_handler(commands=['start', 'restart'])
 def init_bot(message):
     markup = types.InlineKeyboardMarkup()
@@ -15,6 +16,7 @@ def init_bot(message):
                                          f'Далее, я попрошу вас ответить на несколько вопросов.', reply_markup=markup)
 
 
+# Прописываю команду - информация
 @my_bot.message_handler(commands=['info'])
 def help_bot(message):
     my_bot.send_sticker(message.chat.id,
@@ -29,6 +31,7 @@ def help_bot(message):
                                          '\n🎯 <em>made by @zxcfrost1k</em>', parse_mode='html')
 
 
+# Первое сообщение при запуске
 @my_bot.callback_query_handler(func=lambda callback: True)
 def gender(callback):
     if callback.data == 'start':
@@ -42,6 +45,7 @@ def gender(callback):
         my_bot.register_next_step_handler(callback.message, on_click_gender)
 
 
+# Определение пола
 def on_click_gender(message):
     if message.text == 'Парень':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -85,6 +89,7 @@ def on_click_gender(message):
         my_bot.register_next_step_handler(message, on_click_gender)
 
 
+# Определение возраста муж
 def on_click_age_male(message):
     if message.text == '15-17':
         my_bot.send_message(message.chat.id, 'гы, малолетка')
@@ -139,6 +144,7 @@ def on_click_age_male(message):
         my_bot.register_next_step_handler(message, on_click_age_male)
 
 
+# Определение возраста жен
 def on_click_age_female(message):
     if message.text == '15-17':
         my_bot.send_message(message.chat.id, 'оу, малолеточка')
@@ -199,6 +205,7 @@ def on_click_age_female(message):
         my_bot.register_next_step_handler(message, on_click_age_female)
 
 
+# Далее идёт уже подбор самих луков
 def age1_fashion_demon(message):
     true = ['да', 'конечно', 'ага', 'угу', 'кнш', 'типо да', 'ну тип', 'есс', 'ес', 'обижаешь', 'yes', 'da',
             'aga', 'ye', 'yep']
